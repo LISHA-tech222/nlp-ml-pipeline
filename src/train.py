@@ -5,7 +5,7 @@ from preprocess import load_and_prepare_data, vectorize_and_split
 
 
 def train_model():
-    X, y = load_and_prepare_data("C:/Users/LISHA/Documents/prjct 4 yr/nlp-ml-pipeline/data/raw/sms_spam.tsv")
+    X, y = load_and_prepare_data("data/raw/sms_spam.tsv")
     X_train, X_test, y_train, y_test = vectorize_and_split(X, y)
 
     model = LogisticRegression(
